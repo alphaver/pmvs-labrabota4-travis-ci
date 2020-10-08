@@ -15,6 +15,11 @@ script:
 - mkdir unpacked
 - tar -xvf task4.1.tar.gz -C unpacked
 - cd ./unpacked
+- aclocal
+- autoconf
+- autoheader
+- touch NEWS README AUTHORS ChangeLog
+- automake
 - ./configure
 - make
 - tree
