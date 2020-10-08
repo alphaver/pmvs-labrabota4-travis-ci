@@ -19,7 +19,7 @@ script:
 - autoconf
 - autoheader
 - touch NEWS README AUTHORS ChangeLog
-- automake
+- automake --add-missing
 - ./configure
 - make
 - tree
